@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>univers</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      .main {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        > figure {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          background-image: url(image/download.png);
+          > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+          }
+        }
+        .uni_main {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          > .uni {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            left: 0%;
+            top: 0%;
+            > .sun {
+              width: auto;
+              height: auto;
+              position: absolute;
+              left: 46%;
+              top: 41%;
+              border-radius: 50%;
+              background-color: rgb(255, 217, 0);
+              box-shadow: 0 0 10px 1px gold;
+              width: 100px;
+              height: 100px;
+              transform-style: preserve-3d;
+              > .planets {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border-radius: 50%;
+                transform-style: preserve-3d;
+                transform: rotateX(-13deg);
+                > div {
+                  position: absolute;
+                  transform: rotateX(70deg);
+                  &:nth-of-type(1) {
+                    width: 120%;
+                    height: 120%;
+                    left: -10%;
+                    top: -10%;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    > figure {
+                      width: 100%;
+                      height: 100%;
+                      position: relative;
+                      animation: p1 2s linear infinite;
+                      > img {
+                        width: 10%;
+                        height: 10%;
+                        position: absolute;
+                        transform-style: flat;
+                        top: 9%;
+                        left: 9%;
+                      }
+                    }
+                  }
+                  &:nth-of-type(2) {
+                    width: 180%;
+                    height: 180%;
+                    left: -40%;
+                    top: -40%;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    > figure {
+                      width: 100%;
+                      height: 100%;
+                      position: relative;
+                      animation: p2 6s linear infinite;
+                      > img {
+                        width: 10%;
+                        height: 10%;
+                        position: absolute;
+                        transform-style: flat;
+                        top: 9%;
+                        left: 9%;
+                      }
+                    }
+                  }
+                  &:nth-of-type(3) {
+                    width: 260%;
+                    height: 260%;
+                    left: -80%;
+                    top: -80%;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    > figure {
+                      width: 100%;
+                      height: 100%;
+                      position: relative;
+                      animation: p3 12s linear infinite;
+                      > img {
+                        width: 10%;
+                        height: 10%;
+                        position: absolute;
+                        transform-style: flat;
+                        top: 9%;
+                        left: 9%;
+                      }
+                      > .f2 {
+                        position: absolute;
+                        transform-style: flat;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        > .d1 {
+                          border: 0.01px solid white;
+                          position: relative;
+                          width: 18%;
+                          height: 18%;
+                          border-radius: 50%;
+                          left: 4.9%;
+                          top: 4.9%;
+                          animation: moon 3s linear infinite;
+                          > img {
+                            width: 23%;
+                            height: 23%;
+                            position: absolute;
+                            left: 10;
+                            top: 10;
+                          }
+                        }
+                        > .d2 {
+                          background-color: white;
+                          position: absolute;
+                          width: 1%;
+                          height: 30%;
+                          rotate: 40deg;
+                          left: 30%;
+                          top: -20%;
+                        }
+                        > figcaption {
+                          position: absolute;
+                          color: white;
+                          font-family: Arial, "Helvetica Neue", Helvetica,
+                            sans-serif;
+                          width: 100px;
+                          transform-style: preserve-3d;
+                          transform: perspective(1500px) translateZ(200px)
+                            translateY(-100px) translateX(100px);
+                        }
+                      }
+                    }
+                  }
+                  &:nth-of-type(4) {
+                    width: 340%;
+                    height: 340%;
+                    left: -120%;
+                    top: -120%;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    > figure {
+                      width: 100%;
+                      height: 100%;
+                      position: relative;
+                      animation: p4 25s linear infinite;
+                      > img {
+                        width: 5%;
+                        height: 5%;
+                        position: absolute;
+                        transform-style: flat;
+                        top: 15%;
+                        left: 9%;
+                      }
+                    }
+                  }
+                  &:nth-of-type(5) {
+                    width: 480%;
+                    height: 480%;
+                    left: -190%;
+                    top: -190%;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    > figure {
+                      width: 100%;
+                      height: 100%;
+                      position: relative;
+                      animation: p5 80s linear infinite;
+                      > img {
+                        width: 15%;
+                        height: 15%;
+                        position: absolute;
+                        transform-style: flat;
+                        top: 6%;
+                        left: 6%;
+                      }
+                    }
+                  }
+                  &:nth-of-type(6) {
+                    width: 710%;
+                    height: 710%;
+                    left: -295%;
+                    top: -295%;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    > figure {
+                      width: 100%;
+                      height: 100%;
+                      position: relative;
+                      animation: p6 120s linear infinite;
+                      > img {
+                        width: 9%;
+                        height: 9%;
+                        position: absolute;
+                        transform-style: flat;
+                        top: 10%;
+                        left: 10%;
+                      }
+                      > div {
+                        border: 6px solid rgba(175, 172, 138, 0.759);
+                        box-shadow: inset 0 0 15px 8px rgb(31, 27, 3);
+                        position: absolute;
+                        width: 12%;
+                        height: 12%;
+                        border-radius: 50%;
+                        left: 8.5%;
+                        top: 8.5%;
+                      }
+                      > .div2 {
+                        border: 2.5px solid rgba(175, 172, 138, 0.759);
+                        box-shadow: inset 0 0 10px 1px rgb(31, 27, 3);
+                        position: absolute;
+                        width: 13.5%;
+                        height: 13.5%;
+                        border-radius: 50%;
+                        left: 7.7%;
+                        top: 7.7%;
+                      }
+                    }
+                  }
+                  &:nth-of-type(7) {
+                    width: 900%;
+                    height: 900%;
+                    left: -390%;
+                    top: -390%;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    > figure {
+                      width: 100%;
+                      height: 100%;
+                      position: relative;
+                      animation: p7 300s linear infinite;
+                      > img {
+                        width: 5%;
+                        height: 5%;
+                        position: absolute;
+                        transform-style: flat;
+                        top: 15%;
+                        left: 9%;
+                      }
+                    }
+                  }
+                  &:nth-of-type(8) {
+                    width: 1100%;
+                    height: 1100%;
+                    left: -490%;
+                    top: -490%;
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    > figure {
+                      width: 100%;
+                      height: 100%;
+                      position: relative;
+                      animation: p8 500s linear infinite;
+                      > img {
+                        width: 4%;
+                        height: 4%;
+                        position: absolute;
+                        transform-style: flat;
+                        top: 15%;
+                        left: 10%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      @keyframes p1 {
+        to {
+          rotate: -360deg;
+        }
+      }
+      @keyframes p2 {
+        to {
+          rotate: -360deg;
+        }
+      }
+      @keyframes p3 {
+        to {
+          rotate: -360deg;
+        }
+      }
+      @keyframes p4 {
+        to {
+          rotate: -360deg;
+        }
+      }
+      @keyframes p5 {
+        to {
+          rotate: -360deg;
+        }
+      }
+      @keyframes p6 {
+        to {
+          rotate: -360deg;
+        }
+      }
+      @keyframes p7 {
+        to {
+          rotate: -360deg;
+        }
+      }
+      @keyframes p8 {
+        to {
+          rotate: -360deg;
+        }
+      }
+      @keyframes moon {
+        to {
+          rotate: -360deg;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <figure>
+        <img src="image/download (1).png" alt="" />
+      </figure>
+      <div class="uni_main">
+        <div class="uni">
+          <div class="sun">
+            <div class="planets">
+              <div>
+                <figure>
+                  <img src="image/download (5).png" alt="" />
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="image/download (3).png" alt="" />
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="image/download (4).png" alt="" />
+                  <figure class="f2">
+                    <div class="d1">
+                      <img src="image/download (2).png" alt="" />
+                    </div>
+                    <div class="d2"></div>
+                    <figcaption>
+                      Earth<br />107,218 Km/h<br />Orbit Velocity
+                    </figcaption>
+                  </figure>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="image/download (5).png" alt="" />
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="image/download (6).png" alt="" />
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="image/download (7).png" alt="" />
+                  <div></div>
+                  <div class="div2"></div>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="image/download (8).png" alt="" />
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="image/download (9).png" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
